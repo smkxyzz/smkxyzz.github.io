@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: black;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+
+}
+
+a {
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  animation: animate 0.7s infinite;
+  animation-timing-function: linear;
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+@keyframes animate {
+  0% {
+    text-shadow: 4px 4px 0px purple;
+  }
+
+  25% {
+    text-shadow: -4px -4px 0px blue;
+  }
+
+  50% {
+    text-shadow: 4px 4px 0px purple;
+  }
+
+  75% {
+    text-shadow: -4px -4px 0px blue;
+  }
+
+  100% {
+    text-shadow: 4px 4px 0px blue;
+  }
+}
